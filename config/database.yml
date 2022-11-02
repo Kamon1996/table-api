@@ -83,6 +83,6 @@ test:
 #
 production:
   <<: *default
-  database: table_prod
+  database: d2mg85559mck8l
   username: TGames_api
   password: <%= ENV["TGAMES_API_DATABASE_PASSWORD"] %>
