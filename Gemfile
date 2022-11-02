@@ -36,6 +36,7 @@ gem 'bootsnap', require: false
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 gem 'pagy', '~> 5.10'
 gem 'rack-cors'
+gem 'faker', git: 'https://github.com/faker-ruby/faker.git', branch: 'main'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
@@ -45,6 +46,5 @@ end
 group :development do
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
-  gem 'faker', git: 'https://github.com/faker-ruby/faker.git', branch: 'main'
   gem 'rubocop', require: false
 end
