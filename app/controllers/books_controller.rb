@@ -25,7 +25,7 @@ class BooksController < ApplicationController
         Book.where("#{column} = ?", value)
       end
     elsif type == 'include'
-      Book.where('title LIKE ?', '%' + value + '%')
+      Book.where('title ILIKE ?', '%' + value + '%')
     else
       Book.where('title = ?', value)
     end
